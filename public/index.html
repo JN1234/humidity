@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Humidity Sensor</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="./style.css" rel="stylesheet">
+	<script src="./javascript.js"></script>
+	<!-- choose one -->
+	<script src="https://unpkg.com/feather-icons"></script>
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="card"> 
+				<li class="icon" id="logout">
+					<i data-feather="cloud" style="color:black;font-size:40px"></i>
+					Humidity
+				</li>
+			<h2 id="humidity-val" class="humid">
+					Loading... 
+			</h2>
+			<h4 id="humidity-unit" class="unit"></h4>
+			
+			<h2 id="temp-val" class="temp">
+				temp
+			</h2>
+			<h4 id="temp-unit" class="temp-unit">F</h4>
+			<li class="icon-temp" >
+				<i data-feather="thermometer" style="color:black;"></i>
+				Temp
+			</li>
+		</div>
+	</div>
+	
+	
+
+	<script>
+		feather.replace()
+	</script>
+	<script>
+		window.onload = function () {
+
+			setInterval(()=>getData(),3000)
+
+
+		}
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
